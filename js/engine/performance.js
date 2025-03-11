@@ -3,26 +3,26 @@
 // Quality settings for different performance targets
 const qualityPresets = {
     low: {
-      shadowMapSize: 512,
-      shadowEnabled: false,
-      reflectionsEnabled: false,
-      maxLights: 2,
-      texturesEnabled: false,
-      maxFurnitureDetail: 0.5,
-      pixelRatio: 0.75,
-      fogDensity: 0.003,
-      drawDistance: 600
-    },
-    medium: {
-      shadowMapSize: 1024,
+      shadowMapSize: 2048,
       shadowEnabled: true,
       reflectionsEnabled: true,
-      maxLights: 5,
+      maxLights: 10,
       texturesEnabled: true,
-      maxFurnitureDetail: 0.8,
-      pixelRatio: 1,
-      fogDensity: 0.0015,
-      drawDistance: 1000
+      maxFurnitureDetail: 1.0,
+      pixelRatio: window.devicePixelRatio,
+      fogDensity: 0.001,
+      drawDistance: 1500
+    },
+    medium: {
+      shadowMapSize: 2048,
+      shadowEnabled: true,
+      reflectionsEnabled: true,
+      maxLights: 10,
+      texturesEnabled: true,
+      maxFurnitureDetail: 1.0,
+      pixelRatio: window.devicePixelRatio,
+      fogDensity: 0.001,
+      drawDistance: 1500
     },
     high: {
       shadowMapSize: 2048,
