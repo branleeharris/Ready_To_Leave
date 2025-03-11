@@ -10,7 +10,7 @@ const qualityPresets = {
       texturesEnabled: false,
       maxFurnitureDetail: 0.5,
       pixelRatio: 0.75,
-      fogDensity: 0.002,
+      fogDensity: 0.003,
       drawDistance: 600
     },
     medium: {

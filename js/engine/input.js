@@ -119,8 +119,8 @@ const inputState = {
     let y = 0;
     
     // Keyboard input
-    if (inputState.keys['w'] || inputState.keys['arrowup']) y -= 1;
-    if (inputState.keys['s'] || inputState.keys['arrowdown']) y += 1;
+    if (inputState.keys['w'] || inputState.keys['arrowup']) y += 1;
+    if (inputState.keys['s'] || inputState.keys['arrowdown']) y -= 1;
     if (inputState.keys['a'] || inputState.keys['arrowleft']) x -= 1;
     if (inputState.keys['d'] || inputState.keys['arrowright']) x += 1;
     

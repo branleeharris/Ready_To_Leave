@@ -5,11 +5,11 @@ function createFlashlight(scene, player) {
     // Create spotlight for flashlight
     const flashlight = new THREE.SpotLight(
       0xffffcc, // Warm light color
-      1.5, // Intensity
-      350, // Range
-      Math.PI / 5, // Spotlight angle
-      0.4, // Penumbra (soft edge)
-      1.5 // Decay
+      4.0, // Intensity
+      250, // Range
+      Math.PI / 8, // Spotlight angle
+      0.2, // Penumbra (soft edge)
+      2.0 // Decay
     );
     
     // Configure shadow settings
@@ -391,7 +391,7 @@ function createFlashlight(scene, player) {
     // Create ambient lighting for the scene
     function createAmbientLighting(scene) {
       // Dim ambient light for minimal visibility
-      const ambientLight = new THREE.AmbientLight(0x333344, 0.15);
+      const ambientLight = new THREE.AmbientLight(0x333344, 0.05);
       scene.add(ambientLight);
       
       // Add hemisphere light for more natural ambient lighting
