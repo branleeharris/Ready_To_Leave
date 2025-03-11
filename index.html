@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flashlight Game - 3D Horror</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- Game canvas will be created by Three.js -->
+  <div id="gameContainer"></div>
+  
+  <!-- UI Elements -->
+  <div id="instructions">
+    WASD to move | Mouse to aim flashlight | SHIFT to walk slowly
+  </div>
+  
+  <div id="battery">
+    <div id="batteryLevel"></div>
+  </div>
+  
+  <div id="locationDisplay"></div>
+  
+  <!-- Loading screen -->
+  <div id="loadingScreen">
+    <div class="loading-content">
+      <h2>Loading Game...</h2>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Three.js and dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://mrdoob.github.io/stats.js/build/stats.min.js"></script>
+  
+  <!-- Game scripts -->
+  <script src="js/engine/renderer.js"></script>
+  <script src="js/engine/input.js"></script>
+  <script src="js/engine/performance.js"></script>
+  <script src="js/game/materials.js"></script>
+  <script src="js/game/furniture.js"></script>
+  <script src="js/game/lighting.js"></script>
+  <script src="js/game/player.js"></script>
+  <script src="js/game/world.js"></script>
+  <script src="js/utils/helpers.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
